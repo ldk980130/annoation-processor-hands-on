@@ -11,12 +11,12 @@ repositories {
 }
 
 dependencies {
-    testImplementation(kotlin("test"))
+    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21")
+
+    testImplementation(platform("org.junit:junit-bom:5.10.0"))
+    testImplementation("org.junit.jupiter:junit-jupiter")
 }
 
 tasks.test {
     useJUnitPlatform()
-}
-kotlin {
-    jvmToolchain(21)
 }

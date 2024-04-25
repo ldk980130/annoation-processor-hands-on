@@ -11,12 +11,13 @@ repositories {
 }
 
 dependencies {
-    testImplementation(kotlin("test"))
+    compileOnly(project(":annotation"))
+    kapt(project(":processor"))
+
+    testImplementation(platform("org.junit:junit-bom:5.10.0"))
+    testImplementation("org.junit.jupiter:junit-jupiter")
 }
 
 tasks.test {
     useJUnitPlatform()
-}
-kotlin {
-    jvmToolchain(21)
 }
