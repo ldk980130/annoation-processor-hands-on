@@ -1,6 +1,5 @@
 plugins {
     kotlin("jvm") version "1.9.23"
-    kotlin("kapt") version "1.9.23"
 }
 
 group = "org.example"
@@ -11,7 +10,7 @@ repositories {
 }
 
 dependencies {
-    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.9.23")
 
     testImplementation(platform("org.junit:junit-bom:5.10.0"))
     testImplementation("org.junit.jupiter:junit-jupiter")
