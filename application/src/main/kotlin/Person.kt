@@ -1,6 +1,6 @@
 class Person(
-    @PrivateSetter
-    var name: String,
-    @PrivateSetter
-    var age: Int
+    @Property
+    name: String,
+    @Property
+    age: Int
 )
